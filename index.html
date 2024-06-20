@@ -4,42 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAB-LOGIN</title>
-    <style>
-        *{
+   <!--<link rel="stylesheet" href="lab-login.css">-->
+   <style>
+    *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
 body{
+    font-family: Arial, sans-serif;
     max-height: 100vh;
     width: 100vw;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: 400% 400%;
+    background: rgb(198,73,215);
+    background: radial-gradient(circle, rgba(198,73,215,1) 20%, rgba(53,130,222,1) 100%);    background-size: 400% 400%;
+    animation: aniback 3s linear infinite;
+    transition: all 2.s linear 0s;
+    opacity: 0.7;
+}
+@keyframes aniback{
+    0%{
+        background-position: 10%;
+    }
+    25%{
+        background-position: 50%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 200%;
+    }
 }
 .box{
-    border: 2px solid black;
-    width:fit-content;
+    border: 3px solid goldenrod;
+    border-style: groove;
+    width: 23rem;
+    display: flex;
     margin: auto;
     margin-top: 30vh;
     margin-bottom: 20vh;
-    padding: 8%;
+    box-shadow: 10px 10px 8px rgb(231, 177, 177);
 }
-    </style>
+@media (max-width: 600px) {
+    .box {
+        width: 80%;
+    }
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+label{
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-top: 15%;
+}
+input{
+    font-size: 1rem;
+    padding-left: 10px;
+    padding: 3px;
+    border-radius: 20px;
+    outline-style: none;
+}
+button{
+    display: flex;
+    margin: 10px auto;
+    padding: 5px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: aqua;
+    transition: all 0.3s linear;
+}
+button:hover{
+    cursor: pointer;
+    border-radius: 0%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+   </style>
 </head>
 <body>
     <div>
-        <div class="box">
+        <samp class="box">
             <form action="">
-            <label class="name">USER NAME :</label>
-            <input type="text" placeholder="Enter the name" required>
-            <br><br>
-            <label class="name">PASSWORD  :</label>
-            <input type="id" placeholder="Enter the password" required>
-            <br><br>
-            <input type="button" value="submit">
+                <h2>
+                    LOGIN
+                </h2>
+            <label>
+                USER NAME:
+            </label>
+            <input type="text" placeholder="Enter the name" name="USER NAME" required>
+            <br>
+            <br>
+            <label>
+                PASSWORD  :
+            </label>
+            <input type="id" placeholder="Enter the password" required="PASSWORD" >
+            <br>
+            <br>
+            <button type="submit">OPEN</button>
             </form>
-        </div>
+        </samp>
         </div>
     </div>
 </body>
