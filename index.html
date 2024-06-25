@@ -1,79 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAB-LOGIN</title>
-   <style>
-    *{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
-body{
-    font-family: Arial, sans-serif;
-    max-height: 100vh;
-    max-width: 100vw;
-    background-image: url(https://i.ibb.co/fq4vW9M/phone.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 150%;
-    background-attachment: fixed;
-    opacity: 0.7;
-}
-.box{
-    width: 30rem;
-    max-height: 35rem;
-    display: flex;
-    margin: auto;
-    margin-top: 30vh;
-    margin-bottom: 20vh;
-    background-color:rgba(255, 255, 255, 0.151);
-    opacity: 0.9;       
-    border: 3.5px solid rgb(237, 252, 31);
-    box-shadow: 10px 10px 7px rgb(243, 209, 14);
-
-}
-h2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color:rgb(217, 235, 121);
-
-}
-label{
-    color: rgb(1, 1, 17);
-    font-size: 2rem;
-    padding-left: 2.5rem;
-    padding-top: 15%;
-}
-input{
-    font-size: 1rem;
-    margin-left: 25%;
-    padding: 8px;
-    border-radius: 20px;
-    outline-style: none;
-}
-button{
-    display: flex;
-    margin: 10px auto;
-    padding: 5px;
-    margin-bottom: 18px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 50%;
-    border: 4px solid;
-    border-color: aqua;
-    transition: all 0.3s linear;
-}
-button:hover{
-    cursor: pointer;
-    border-radius: 0%;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-/* for phone*/
-@media (max-width: 600px) {
     body {
     font-family: Arial, sans-serif;
     max-height: 100vh;
@@ -89,8 +13,7 @@ button:hover{
         margin: auto;
         margin-top: 30vh;
         margin-bottom: 20vh;
-        background-color:rgba(255, 255, 255, 0.151);
-        opacity: 0.9;       
+        background-color:transparent;
         border: 3.5px solid rgb(237, 252, 31);
         box-shadow: 10px 10px 7px rgb(243, 209, 14);
  
@@ -102,44 +25,11 @@ button:hover{
     label{
         font-size: 1.5rem;
         font-weight: bold;
-        padding-left: 1rem;
-        padding-top: 15%;
         color: rgb(1, 1, 17);
     }
     input{
         font-size: 1rem;
-        margin-left: 6%;
-        margin-top: 2%;
-        padding: 5px;
-        border-radius: 20px;
-        outline-style: none;
+        display: flex;
+        margin-top: 4px;
+        outline: none;
     }
-}
-   </style>
-</head>
-<body>
-    <div>
-        <samp class="box">
-            <form action="">
-                <h2>
-                    LOGIN
-                </h2>
-            <label>
-                USER NAME:
-            </label>
-            <input type="text" placeholder="Enter the name" name="USER NAME" required>
-            <br>
-            <br>
-            <label>
-                PASSWORD  :
-            </label>
-            <input type="id" placeholder="Enter the password" required="PASSWORD" >
-            <br>
-            <br>
-            <button type="submit">OPEN</button>
-            </form>
-        </samp>
-        </div>
-    </div>
-</body>
-</html>
